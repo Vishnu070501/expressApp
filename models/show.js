@@ -32,3 +32,4 @@ const Show = sequelize.define('Show', {
 });
 
 module.exports = Show;
+

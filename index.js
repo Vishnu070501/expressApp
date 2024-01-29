@@ -37,7 +37,9 @@ const express = require('express');
 const app = express();
 const sequelize = require('./db');
 const showsRouter = require('./routes/showController');
+const cors = require('cors');
 
+app.use(cors())
 app.use(express.json());
 app.use('/shows', showsRouter);
 
